@@ -33,6 +33,7 @@ Assim, com a homografia feita, basta aplicar a imagem no plano usando a função
 Se somente mostrar a imagem gerada pelo código acima, o resultado é uma imagem completamente preta com apenas a imagem selecionada a mostra, não dando assim, o efeito de realidade aumentada, como mostra a Figura 1. Para contornar essa situação, para cada pixel preto da imagem foi substituído pelo frame original. Um possível problema que poderia ocorrer, é a imagem que será colocada no lugar do tabuleiro ter muitos pixels pretos, nesse caso esses pixels seriam substituídos pelo frame original também, dando um efeito de transparência.
 
 ![fp](fundopreto1.png)
+
 Figura 1 - Imagem sem transparência
 
 Para que a imagem cubra totalmente o tabuleiro é preciso redimensioná-la. Caso a imagem seja menor que o tabuleiro uma parte do tabuleiro ficará a mostra, caso seja maior, a imagem irá substituir uma região maior que o tabuleiro. Para que essa situação não ocorra, basta fazer com que a imagem a ser substituída tenha o mesmo tamanho que o tabuleiro.
@@ -42,6 +43,7 @@ Para que a imagem cubra totalmente o tabuleiro é preciso redimensioná-la. Caso
 Como é possível observar pela Figura 2, o marcador foi substituído perfeitamente pela imagem escolhida, sendo completamente preenchido na imagem.
 
 ![fp](redimensionada.png)
+
 Figura 2 - Imagem com Realidade Aumentada
 
 O marcador não precisa estar centralizado para que o programa funcione. Mesmo que o marcador esteja na diagonal, ou não esteja completamente mostrado na tela a imagem é substituída de forma satisfatória, como mostra a Figura 3. É necessário que pelo menos um marcador esteja visível para que a imagem seja substituída. 
